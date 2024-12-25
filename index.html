@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations with us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header
+      class="py-6 overflow-hidden relative sticky top-0 z-10 bg-slate-900 text-white"
+    >
+      <div class="container">
+        <nav aria-label="Main navbar" class="flex items-center justify-between">
+          <h2 aria-label="Brand Logo" class="logo text-lg font-medium">
+            Musaddek
+          </h2>
+          <ul aria-details="menu-item" class="menus flex items-center gap-6">
+            <li id="menu-item">Home</li>
+            <li id="menu-item">About</li>
+            <li id="menu-item">Portfolio</li>
+            <li id="menu-item">Blogs</li>
+            <li id="menu-item">Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="page_1 py-20 bg-teal-500 text-white h-screen grid place-items-center"
+    >
+      <div class="container">
+        <h1 class="title text-6xl font-bold text-center">
+          Animations Section 1
+        </h1>
+      </div>
+    </section>
+
+    <section
+      class="page_2 py-20 bg-purple-400 text-white h-screen grid place-items-center"
+    >
+      <div class="container">
+        <h2 class="title_2 text-6xl font-bold text-center mb-16">
+          Animations Section 2
+        </h2>
+        <div class="grid grid-cols-3 gap-8">
+          <div
+            class="course_card flex flex-col items-start gap-4 bg-purple-500 p-6"
+          >
+            <h2 class="text-3xl font-semibold">Web development</h2>
+            <p class="text-lg leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              omnis debitis nisi repudiandae sint assumenda.
+            </p>
+            <button
+              class="py-3 px-8 bg-purple-700 hover:bg-purple-800 inline-flex items-center justify-center"
+            >
+              Enroll Now
+            </button>
+          </div>
+          <div
+            class="course_card flex flex-col items-start gap-4 bg-purple-500 p-6"
+          >
+            <h2 class="text-3xl font-semibold">App development</h2>
+            <p class="text-lg leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              omnis debitis nisi repudiandae sint assumenda.
+            </p>
+            <button
+              class="py-3 px-8 bg-purple-700 hover:bg-purple-800 inline-flex items-center justify-center"
+            >
+              Enroll Now
+            </button>
+          </div>
+          <div
+            class="course_card flex flex-col items-start gap-4 bg-purple-500 p-6"
+          >
+            <h2 class="text-3xl font-semibold">Digital Marketing</h2>
+            <p class="text-lg leading-normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              omnis debitis nisi repudiandae sint assumenda.
+            </p>
+            <button
+              class="py-3 px-8 bg-purple-700 hover:bg-purple-800 inline-flex items-center justify-center"
+            >
+              Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+    class="page_2 py-20 bg-blue-400 text-white h-screen grid place-items-center"
+  > </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
