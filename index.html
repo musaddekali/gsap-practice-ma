@@ -11,101 +11,389 @@
     <header class="py-6 overflow-hidden relative bg-slate-900 text-white">
       <div class="container">
         <nav aria-label="Main navbar" class="flex items-center justify-between">
-          <h2 aria-label="Brand Logo" class="logo text-lg font-medium">
+          <h2 aria-label="Brand Logo" class="logo text-2xl font-medium">
             Musaddek
           </h2>
-          <ul aria-details="menu-item" class="menus flex items-center gap-6">
-            <li id="menu-item">Home</li>
-            <li id="menu-item">About</li>
-            <li id="menu-item">Portfolio</li>
-            <li id="menu-item">Blogs</li>
-            <li id="menu-item">Contact</li>
+          <ul class="menus flex items-center gap-6">
+            <li class="menu-item uppercase font-medium tracking-tight">
+              <a href="#" class="hover:text-blue-500">Home</a>
+            </li>
+            <li class="menu-item uppercase font-medium tracking-tight">
+              <a href="#" class="hover:text-blue-500">About</a>
+            </li>
+            <li class="menu-item uppercase font-medium tracking-tight">
+              <a href="#" class="hover:text-blue-500">Portfolio</a>
+            </li>
+            <li class="menu-item uppercase font-medium tracking-tight">
+              <a href="#" class="hover:text-blue-500">Blogs</a>
+            </li>
+            <li class="menu-item uppercase font-medium tracking-tight">
+              <a href="#" class="hover:text-blue-500">Contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <section
-      class="section_1 bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png')] bg-no-repeat bg-cover py-20 bg-teal-500 text-white h-screen"
+      class="bg-[url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png')] bg-no-repeat bg-cover py-20 bg-teal-500 text-white h-[calc(100vh-76px)]"
     >
       <div class="container">
-        <h1 class="title text-6xl font-bold text-center">
-          Animations Section 1
-        </h1>
-      </div>
-    </section>
-
-    <section
-      class="section_2 py-20 bg-purple-400 text-white h-screen grid place-items-center"
-    >
-      <div class="container">
-        <h2 class="title_2 text-6xl font-bold text-center mb-16">
-          Animations Section 2
-        </h2>
-        <div class="grid grid-cols-3 gap-8">
-          <div
-            class="course_card flex flex-col items-start gap-4 bg-purple-500 p-6"
-          >
-            <h2 class="text-3xl font-semibold">Web development</h2>
-            <p class="text-lg leading-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              omnis debitis nisi repudiandae sint assumenda.
-            </p>
-            <button
-              class="py-3 px-8 bg-purple-700 hover:bg-purple-800 inline-flex items-center justify-center"
+        <div class="grid gap-8 justify-center">
+          <h1 class="title text-6xl font-bold text-center tracking-tight">
+            Become a pro in web development
+          </h1>
+          <p class="title text-2xl text-center max-w-3xl mx-auto">
+            Learn the latest technologies and tools to become a professional web
+            developer. We provide the best courses and tutorials to help you.
+          </p>
+          <div class="text-center mt-4">
+            <a
+              href="#"
+              class="title inline-flex items-center px-6 py-3 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Enroll Now
-            </button>
-          </div>
-          <div
-            class="course_card flex flex-col items-start gap-4 bg-purple-500 p-6"
-          >
-            <h2 class="text-3xl font-semibold">App development</h2>
-            <p class="text-lg leading-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              omnis debitis nisi repudiandae sint assumenda.
-            </p>
-            <button
-              class="py-3 px-8 bg-purple-700 hover:bg-purple-800 inline-flex items-center justify-center"
-            >
-              Enroll Now
-            </button>
-          </div>
-          <div
-            class="course_card flex flex-col items-start gap-4 bg-purple-500 p-6"
-          >
-            <h2 class="text-3xl font-semibold">Digital Marketing</h2>
-            <p class="text-lg leading-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              omnis debitis nisi repudiandae sint assumenda.
-            </p>
-            <button
-              class="py-3 px-8 bg-purple-700 hover:bg-purple-800 inline-flex items-center justify-center"
-            >
-              Enroll Now
-            </button>
+              ORDER NOW
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section_3 pin_section min-h-screen py-10 bg-slate-900">
-      <h2
-        class="pin_text text-[min(50vw,80vh)] tracking-[-2vw] font-semibold text-white leading-none whitespace-nowrap"
-      >
-        MD.MUSADDEK ALI
-      </h2>
+    <section class="py-24 bg-purple-400 text-white grid place-items-center">
+      <div class="container">
+        <h2 class="title_2 tracking-tight text-6xl font-bold text-center mb-16">
+          Get our latest updates
+        </h2>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div
+            class="card p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="card p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                Noteworthy technology acquisitions 2021
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Read more
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section_3">
-      <div class="">
-        <figure class="img overflow-hidden">
-          <img
-            class="max-w-full h-auto mx-auto object-cover"
-            src="https://images.unsplash.com/photo-1589312133722-eab40c686ebb?w=2000&q=100"
-            alt="Nature"
-          />
-        </figure>
+    <section class="py-24 bg-gray-100 text-gray-900">
+      <div class="container">
+        <div
+          class="overflow-hidden w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <div class="flex items-center justify-between mb-4">
+            <h5
+              class="text-xl font-bold leading-none text-gray-900 dark:text-white"
+            >
+              Latest Customers
+            </h5>
+            <a
+              href="#"
+              class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+            >
+              View all
+            </a>
+          </div>
+          <div class="flow-root">
+            <ul
+              role="list"
+              class="user_list divide-y divide-gray-200 dark:divide-gray-700"
+            >
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+                      alt="Neil image"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p
+                      class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                    >
+                      Neil Sims
+                    </p>
+                    <p
+                      class="text-sm text-gray-500 truncate dark:text-gray-400"
+                    >
+                      email@windster.com
+                    </p>
+                  </div>
+                  <div
+                    class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    $320
+                  </div>
+                </div>
+              </li>
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+                      alt="Bonnie image"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p
+                      class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                    >
+                      Bonnie Green
+                    </p>
+                    <p
+                      class="text-sm text-gray-500 truncate dark:text-gray-400"
+                    >
+                      email@windster.com
+                    </p>
+                  </div>
+                  <div
+                    class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    $3467
+                  </div>
+                </div>
+              </li>
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+                      alt="Michael image"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p
+                      class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                    >
+                      Michael Gough
+                    </p>
+                    <p
+                      class="text-sm text-gray-500 truncate dark:text-gray-400"
+                    >
+                      email@windster.com
+                    </p>
+                  </div>
+                  <div
+                    class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    $67
+                  </div>
+                </div>
+              </li>
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+                      alt="Lana image"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p
+                      class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                    >
+                      Lana Byrd
+                    </p>
+                    <p
+                      class="text-sm text-gray-500 truncate dark:text-gray-400"
+                    >
+                      email@windster.com
+                    </p>
+                  </div>
+                  <div
+                    class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    $367
+                  </div>
+                </div>
+              </li>
+              <li class="pt-3 pb-0 sm:pt-4">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+                      alt="Thomas image"
+                    />
+                  </div>
+                  <div class="flex-1 min-w-0 ms-4">
+                    <p
+                      class="text-sm font-medium text-gray-900 truncate dark:text-white"
+                    >
+                      Thomes Lean
+                    </p>
+                    <p
+                      class="text-sm text-gray-500 truncate dark:text-gray-400"
+                    >
+                      email@windster.com
+                    </p>
+                  </div>
+                  <div
+                    class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white"
+                  >
+                    $2367
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 

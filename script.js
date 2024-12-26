@@ -1,8 +1,7 @@
 let heroTl = gsap.timeline();
 heroTl.from(".logo", {
-  y: -30,
-  opacity: 0,
-  scale: 10,
+  y: 1000,
+  duration: 1
 });
 
 heroTl.from(".menus li", {
@@ -13,6 +12,7 @@ heroTl.from(".menus li", {
 
 heroTl.from(".title", {
   scale: 0,
+  stagger: 0.15,
 });
 
 gsap.from(".title_2", {
@@ -28,39 +28,21 @@ gsap.from(".title_2", {
   },
 });
 
-gsap.from(".course_card", {
-  x: -500,
+gsap.from(".card", {
   y: 100,
   opacity: 0,
   duration: 1,
   stagger: 0.25,
   scrollTrigger: {
-    trigger: ".course_card",
+    trigger: ".card",
     scroller: "body",
     end: "top 50%",
-    scrub: 2,
+    scrub: 3,
   },
 });
 
-gsap.to(".pin_text", {
-  //   transform: "translateX(-100%)",
-  x: "-100%",
-  scrollTrigger: {
-    trigger: ".pin_section",
-    markers: true,
-    start: "top 0%",
-    end: "top -100%",
-    scrub: 1,
-    pin: true,
-  },
-});
-
-gsap.from(".img", {
-  scaleX: 0.15,
-  y: 100,
-  scrollTrigger: {
-    trigger: ".img",
-    scrub: 2,
-    end: "top 20%",
-  },
+gsap.from(".user_list li", {
+   x: -100,
+   stagger: 0.15,
+   opacity: 0,
 });
