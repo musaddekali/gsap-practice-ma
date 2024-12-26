@@ -8,6 +8,7 @@ heroTl.from(".menus li", {
   y: -30,
   opacity: 0,
   stagger: 0.15,
+  // onComplete: () => alert('Hello World')
 });
 
 heroTl.from(".title", {
@@ -73,7 +74,7 @@ gsap.from(".box_wrap2 .box", {
   x: 100,
   opacity: 0,
   duration: 1,
-  stagger: -0.25,
+  stagger: 0.25,
   scrollTrigger: {
     trigger: ".box_wrap2",
     scroller: "body",
