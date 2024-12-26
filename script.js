@@ -15,6 +15,18 @@ heroTl.from(".title", {
   stagger: 0.15,
 });
 
+gsap.from(".hero", 
+  {
+    backgroundPosition: "0 160%",
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".hero",
+      scroller: "body",
+      scrub: 1,
+    }
+  }
+)
+
 gsap.from(".title_2", {
   x: 500,
   duration: 1,
@@ -41,8 +53,34 @@ gsap.from(".card", {
   },
 });
 
-gsap.from(".user_list li", {
-   x: -100,
-   stagger: 0.15,
-   opacity: 0,
-});
+
+gsap.from(".box_wrap1 .box", {
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.25,
+  scrollTrigger: {
+    trigger: ".box_wrap1",
+    scroller: "body",
+    markers: true,
+    scrub: 2,
+    start: "top bottom",
+    end: "top center"
+  }
+})
+
+gsap.from(".box_wrap2 .box", {
+  x: 100,
+  opacity: 0,
+  duration: 1,
+  stagger: -0.25,
+  scrollTrigger: {
+    trigger: ".box_wrap2",
+    scroller: "body",
+    markers: true,
+    scrub: 2,
+    start: "top bottom",
+    end: "top center"
+  }
+})
+
